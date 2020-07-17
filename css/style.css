@@ -22,7 +22,9 @@ body {
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(168, 237, 233, 0.5) 0%, rgba(254, 214, 227, 0.5) 100%) , url(../img/perroa.jpg);
+    /*background-image: linear-gradient(to top, rgba(168, 237, 233, 0.5) 0%, rgba(254, 214, 227, 0.5) 100%) , url(../img/perroa.jpg);*/
+    background-image: linear-gradient(to right, rgba(250, 112, 153, 0.103) 0%, rgba(254, 225, 64, 0.199) 100%), url(../img/perroa.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -39,7 +41,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:#000;
+    color:#fff;
 }
 
 
@@ -51,7 +53,7 @@ header{
     width: 40;
     height: 40px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
 }
 
@@ -59,9 +61,12 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 18vw;
     height: 100%;
-    background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.596) 0%, rgba(251, 237, 150, 0.5) 100%);
+
+    /*background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.596) 0%, rgba(251, 237, 150, 0.5) 100%);*/
+    background-image: linear-gradient(-20deg, rgba(133, 25, 122, 0.233) 0%, rgba(36, 210, 146, 0.397) 100%);
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -88,8 +93,10 @@ header:hover .menu-navegacion{
 }
 
 .menu-navegacion a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
+    font-size: 20px ;
+    font-weight: bold;
 
 }
 
@@ -100,8 +107,9 @@ header:hover .menu-navegacion{
 }
 
 .copy{
-    font-weight: 300;
+    font-weight: bold;
     font-size: 25px;
+    
 }
 
 /* Nuestro servicio */
@@ -157,6 +165,13 @@ header:hover .menu-navegacion{
 
 .gallery{
     background: #f2f2f2;
+}
+
+
+.contenedor-productos{
+
+    background: #e2e2e2;
+
 }
 
 .contenedor-galeria{
@@ -257,7 +272,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
 
 }
@@ -270,7 +285,7 @@ footer{
 
 .brand{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -323,7 +338,7 @@ footer{
 @media screen and (max-width:800px){
 
     .menu-navegacion{
-        width: 50vw;
+        width: 30vw;
     }
 
     .titulo{
@@ -388,7 +403,7 @@ footer{
 @media screen and (max-width:500px){
 
     .menu-navegacion{
-        width: 65vw;
+        width: 40vw;
     }
 
     .agregar-imagen{
